@@ -1,0 +1,125 @@
+:root {
+  --bg: #fff8ec;
+  --bg2: #ffe2b8;
+  --texto: #2b2118;
+  --tarjeta: #ffffff;
+  --acento: #ff6b35;
+  --suave: #7a6a5a;
+  --sombra: 0 20px 50px rgba(255, 107, 53, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16121f;
+    --bg2: #2a1f3d;
+    --texto: #f6efe6;
+    --tarjeta: #221b30;
+    --suave: #b8aac9;
+    --sombra: 0 20px 50px rgba(0, 0, 0, 0.45);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: ui-rounded, 'Nunito', system-ui, sans-serif;
+  color: var(--texto);
+  background: radial-gradient(circle at top, var(--bg2), var(--bg) 60%) fixed;
+  line-height: 1.5;
+}
+
+main {
+  flex: 1;
+  width: min(680px, 100%);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+  text-align: center;
+}
+
+.fecha {
+  text-transform: capitalize;
+  color: var(--suave);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  line-height: 1.1;
+  margin: 0.4rem 0 2.5rem;
+}
+
+h1 span {
+  color: var(--acento);
+}
+
+.tarjeta {
+  position: relative;
+  background: var(--tarjeta);
+  border-radius: 28px;
+  padding: 2.5rem 1.75rem 1.75rem;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta::before {
+  content: '😅';
+  position: absolute;
+  top: -1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.6rem;
+}
+
+.chiste {
+  font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.75rem;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.boton {
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--texto);
+  background: transparent;
+  border: 2px solid var(--acento);
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+
+.boton:hover {
+  background: var(--acento);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nota {
+  margin-top: 1.75rem;
+  color: var(--suave);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--acento);
+}

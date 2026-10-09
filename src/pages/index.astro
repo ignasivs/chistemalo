@@ -1,17 +1,57 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import { chisteDelDia } from '../utils/chiste';
+
 const { fecha, chiste } = chisteDelDia();
+
+const fechaBonita = new Date(`${fecha}T12:00:00`).toLocaleDateString('es-ES', {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const mensaje = encodeURIComponent(`${chiste.texto}\n\n😅 Chiste malo del día: https://chistemalo.com`);
 ---
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Chiste malo del día</title>
-  </head>
-  <body>
-    <h1>Chiste malo del día</h1>
-    <p>{fecha}</p>
-    <p>{chiste.texto}</p>
-  </body>
-</html>
+
+<Layout
+  title="Chiste malo del día | Un chiste malo nuevo cada día"
+  description="Un chiste malo distinto cada día para sacarte una sonrisa (o un suspiro). Compártelo con quien más lo merezca."
+>
+  <main>
+    <header>
+      <p class="fecha">{fechaBonita}</p>
+      <h1>Chiste malo <span>del día</span></h1>
+    </header>
+
+    <article class="tarjeta">
+      <p class="chiste" id="chiste">{chiste.texto}</p>
+      <div class="acciones">
+        <a class="boton" href={`https://wa.me/?text=${mensaje}`} target="_blank" rel="noopener">WhatsApp</a>
+        <a class="boton" href={`https://twitter.com/intent/tweet?text=${mensaje}`} target="_blank" rel="noopener">X</a>
+        <button class="boton" id="copiar" type="button">Copiar</button>
+      </div>
+    </article>
+
+    <p class="nota">Vuelve mañana para otro chiste malo.</p>
+  </main>
+
+  <footer>
+    © 2026 chistemalo.com · <a href="/api/hoy.json">API del chiste del día</a>
+  </footer>
+
+  <script>
+    const boton = document.getElementById('copiar') as HTMLButtonElement;
+    const chiste = document.getElementById('chiste');
+
+    boton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(`${chiste?.textContent ?? ''}\n\nhttps://chistemalo.com`);
+        boton.textContent = '¡Copiado!';
+      } catch {
+        boton.textContent = 'No se pudo copiar';
+      }
+      setTimeout(() => (boton.textContent = 'Copiar'), 2000);
+    });
+  </script>
+</Layout>
