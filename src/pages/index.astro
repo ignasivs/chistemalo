@@ -1,16 +1,17 @@
 ---
+import { chisteDelDia } from '../utils/chiste';
+const { fecha, chiste } = chisteDelDia();
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Chiste malo del día</title>
+  </head>
+  <body>
+    <h1>Chiste malo del día</h1>
+    <p>{fecha}</p>
+    <p>{chiste.texto}</p>
+  </body>
 </html>

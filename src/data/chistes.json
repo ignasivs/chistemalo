@@ -1,0 +1,10 @@
+[
+  { "id": 1, "texto": "¿Qué le dice un techo a otro techo? Techo de menos.", "categoria": "juegos de palabras" },
+  { "id": 2, "texto": "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!", "categoria": "juegos de palabras" },
+  { "id": 3, "texto": "¿Cómo se despiden los químicos? Ácido un placer.", "categoria": "juegos de palabras" },
+  { "id": 4, "texto": "¿Por qué estaba triste el libro de matemáticas? Porque tenía muchos problemas.", "categoria": "juegos de palabras" },
+  { "id": 5, "texto": "¿Qué le dice un semáforo a otro? No me mires, que me pongo rojo.", "categoria": "juegos de palabras" },
+  { "id": 6, "texto": "¿Cuál es el café más peligroso del mundo? El ex-preso.", "categoria": "juegos de palabras" },
+  { "id": 7, "texto": "¿Qué le dice un jardinero a otro? Disfrutemos mientras podamos.", "categoria": "juegos de palabras" },
+  { "id": 8, "texto": "¿Qué le dice una iguana a su hermana gemela? Somos iguanitas.", "categoria": "juegos de palabras" }
+]
