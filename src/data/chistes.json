@@ -1,10 +1,372 @@
 [
-  { "id": 1, "texto": "¿Qué le dice un techo a otro techo? Techo de menos.", "categoria": "juegos de palabras" },
-  { "id": 2, "texto": "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!", "categoria": "juegos de palabras" },
-  { "id": 3, "texto": "¿Cómo se despiden los químicos? Ácido un placer.", "categoria": "juegos de palabras" },
-  { "id": 4, "texto": "¿Por qué estaba triste el libro de matemáticas? Porque tenía muchos problemas.", "categoria": "juegos de palabras" },
-  { "id": 5, "texto": "¿Qué le dice un semáforo a otro? No me mires, que me pongo rojo.", "categoria": "juegos de palabras" },
-  { "id": 6, "texto": "¿Cuál es el café más peligroso del mundo? El ex-preso.", "categoria": "juegos de palabras" },
-  { "id": 7, "texto": "¿Qué le dice un jardinero a otro? Disfrutemos mientras podamos.", "categoria": "juegos de palabras" },
-  { "id": 8, "texto": "¿Qué le dice una iguana a su hermana gemela? Somos iguanitas.", "categoria": "juegos de palabras" }
+  {
+    "id": 1,
+    "texto": "¿Qué le dice un techo a otro techo? Techo de menos.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 9,
+    "texto": "¿Qué le dice un pez a otro pez? Nada.",
+    "categoria": "animales"
+  },
+  {
+    "id": 25,
+    "texto": "¿Cuál es el colmo de un electricista? Que su mujer se llame Luz y sus hijos le sigan la corriente.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 2,
+    "texto": "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 20,
+    "texto": "¿Cómo se llama el primo vegetariano de Bruce Lee? Broco Lee.",
+    "categoria": "comida"
+  },
+  {
+    "id": 52,
+    "texto": "¿Por qué el reloj fue a la cárcel? Por matar el tiempo.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 19,
+    "texto": "¿Qué le dice una impresora a otra? ¿Esa hoja es tuya o es impresión mía?",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 26,
+    "texto": "¿Cuál es el colmo de un jardinero? Que su novia se llame Rosa y lo deje plantado.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 3,
+    "texto": "¿Cómo se despiden los químicos? Ácido un placer.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 11,
+    "texto": "¿Cuál es el animal más antiguo? La cebra, porque está en blanco y negro.",
+    "categoria": "animales"
+  },
+  {
+    "id": 4,
+    "texto": "¿Por qué estaba triste el libro de matemáticas? Porque tenía muchos problemas.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 63,
+    "texto": "—Jaimito, ¿por qué llegas tarde? —Porque había un cartel que decía: «Escuela, vaya despacio».",
+    "categoria": "colegio"
+  },
+  {
+    "id": 53,
+    "texto": "¿Por qué el esqueleto no fue a la fiesta? Porque no tenía cuerpo para fiestas.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 47,
+    "texto": "¿Qué le dice un huevo a una sartén? Me tienes frito.",
+    "categoria": "comida"
+  },
+  {
+    "id": 27,
+    "texto": "¿Cuál es el colmo de un astronauta? Que su pareja le diga que necesita más espacio.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 12,
+    "texto": "¿Por qué los pájaros vuelan hacia el sur en invierno? Porque andando tardarían demasiado.",
+    "categoria": "animales"
+  },
+  {
+    "id": 5,
+    "texto": "¿Qué le dice un semáforo a otro? No me mires, que me pongo rojo.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 42,
+    "texto": "¿Cuántos programadores hacen falta para cambiar una bombilla? Ninguno, eso es un problema de hardware.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 34,
+    "texto": "—Doctor, me duele aquí. —Pues no se toque.",
+    "categoria": "doctor"
+  },
+  {
+    "id": 6,
+    "texto": "¿Cuál es el café más peligroso del mundo? El ex-preso.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 13,
+    "texto": "¿Qué le dice un pulpo a otro? ¿Te echo una mano? Y otra, y otra, y otra.",
+    "categoria": "animales"
+  },
+  {
+    "id": 17,
+    "texto": "¿Qué le dice el 1 al 10? Para ser como yo tienes que ser sincero.",
+    "categoria": "números"
+  },
+  {
+    "id": 54,
+    "texto": "¿Por qué los fantasmas no mienten? Porque se les ve a través.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 28,
+    "texto": "¿Cuál es el colmo de un matemático? Que su hijo sea un cero a la izquierda.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 61,
+    "texto": "¿Por qué el cantante lleva una escalera? Para llegar a las notas altas.",
+    "categoria": "música"
+  },
+  {
+    "id": 7,
+    "texto": "¿Qué le dice un jardinero a otro? Disfrutemos mientras podamos.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 48,
+    "texto": "¿Qué le dice una uva verde a una uva morada? Respira, que te estás poniendo morada.",
+    "categoria": "comida"
+  },
+  {
+    "id": 14,
+    "texto": "¿Cómo se llama el pez más negativo? El pez-imista.",
+    "categoria": "animales"
+  },
+  {
+    "id": 29,
+    "texto": "¿Cuál es el colmo de un fotógrafo? Que su hijo salga movido.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 8,
+    "texto": "¿Qué le dice una iguana a su hermana gemela? Somos iguanitas.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 43,
+    "texto": "¿Por qué fue el ordenador al médico? Porque tenía un virus.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 55,
+    "texto": "¿Por qué el Sol no va a la universidad? Porque ya tiene millones de grados.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 38,
+    "texto": "—Papá, ¿qué se siente al tener un hijo tan guapo? —No lo sé, pregúntale a tu abuelo.",
+    "categoria": "padres"
+  },
+  {
+    "id": 10,
+    "texto": "¿Cómo se llama el campeón japonés de buceo? Tokofondo. ¿Y el subcampeón? Kasitoko.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 49,
+    "texto": "¿Qué le dice un espagueti a otro? Menudo lío tenemos aquí.",
+    "categoria": "comida"
+  },
+  {
+    "id": 30,
+    "texto": "¿Cuál es el colmo de un pintor? Que lo dejen en blanco.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 15,
+    "texto": "¿Qué dice un caracol cuando va montado en una tortuga? ¡Wiiiiii!",
+    "categoria": "animales"
+  },
+  {
+    "id": 64,
+    "texto": "—Profe, ¿me puede castigar por algo que no he hecho? —Claro que no. —Pues no he hecho los deberes.",
+    "categoria": "colegio"
+  },
+  {
+    "id": 16,
+    "texto": "¿Qué le dice una calculadora a otra? Cuenta conmigo.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 56,
+    "texto": "¿Por qué la Luna no fue a cenar? Porque estaba llena.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 31,
+    "texto": "¿Cuál es el colmo de un cerrajero? Que se le cierren todas las puertas.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 44,
+    "texto": "¿Por qué se puso gafas el teléfono? Porque perdió el contacto.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 50,
+    "texto": "¿Cuál es el último animal que subió al arca de Noé? El del-fín.",
+    "categoria": "animales"
+  },
+  {
+    "id": 21,
+    "texto": "¿Qué le dice un mar a otro mar? Nada, se saludan con las olas.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 35,
+    "texto": "—Doctor, me siento invisible. —Lo siento, hoy no veo a nadie.",
+    "categoria": "doctor"
+  },
+  {
+    "id": 66,
+    "texto": "¿Por qué el café fue a la policía? Porque lo habían molido.",
+    "categoria": "comida"
+  },
+  {
+    "id": 22,
+    "texto": "¿Qué le dice una pared a otra pared? Nos vemos en la esquina.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 32,
+    "texto": "¿Cuál es el colmo de un pastelero? Que su novia lo deje por empalagoso.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 51,
+    "texto": "¿Por qué los elefantes no usan ordenador? Porque tienen miedo del ratón.",
+    "categoria": "animales"
+  },
+  {
+    "id": 57,
+    "texto": "¿Por qué el lápiz es tan humilde? Porque siempre se deja borrar.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 37,
+    "texto": "—Camarero, esta sopa está fría. —Es gazpacho, señor.",
+    "categoria": "camarero"
+  },
+  {
+    "id": 23,
+    "texto": "¿Qué le dice una nube a otra nube? Hoy vas muy cargada.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 33,
+    "texto": "¿Cuál es el colmo de un pez? Ahogarse en un vaso de agua.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 45,
+    "texto": "Un programador va a la panadería. Su pareja le dice: «Compra una barra de pan y, si hay huevos, trae seis». Vuelve con seis barras. «¿Por qué?» «Porque había huevos.»",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 24,
+    "texto": "¿Qué hace un mudo bailando? Una mudanza.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 76,
+    "texto": "¿Qué pesa más, un kilo de plomo o un kilo de plumas? Lo mismo, pero las plumas se lo toman peor.",
+    "categoria": "acertijos"
+  },
+  {
+    "id": 69,
+    "texto": "¿Por qué el ciempiés llegó tarde? Porque tuvo que atarse los zapatos.",
+    "categoria": "animales"
+  },
+  {
+    "id": 67,
+    "texto": "¿Qué le dice un pan duro a otro? Nos van a hacer migas.",
+    "categoria": "comida"
+  },
+  {
+    "id": 18,
+    "texto": "¿Qué le dice un cero a un ocho? Bonito cinturón.",
+    "categoria": "números"
+  },
+  {
+    "id": 77,
+    "texto": "¿Qué le dice un imán a otro imán? Qué atractivo eres.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 58,
+    "texto": "¿Qué le dice una taza a otra? ¿Qué tazas haciendo?",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 62,
+    "texto": "¿Qué le dice un guitarrista a otro? Hoy te veo muy afinado.",
+    "categoria": "música"
+  },
+  {
+    "id": 70,
+    "texto": "¿Cuál es el colmo de un arquitecto? Que sus planes se derrumben.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 75,
+    "texto": "¿Cuál es el animal más fuerte? El caracol, porque lleva la casa a cuestas.",
+    "categoria": "animales"
+  },
+  {
+    "id": 65,
+    "texto": "—Hijo, ¿qué has sacado en el examen? —El bolígrafo, el lápiz y la goma.",
+    "categoria": "colegio"
+  },
+  {
+    "id": 59,
+    "texto": "¿Qué le dice un cuadro a otro? Qué marco tan bonito.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 46,
+    "texto": "¿Qué le dice un bit a otro bit? Nos vemos en el bus.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 68,
+    "texto": "¿Qué le dice un yogur a otro? Qué natural eres.",
+    "categoria": "comida"
+  },
+  {
+    "id": 79,
+    "texto": "¿Por qué los peces no se conectan a internet? Porque le tienen miedo a las redes.",
+    "categoria": "animales"
+  },
+  {
+    "id": 78,
+    "texto": "¿Qué le dice una goma a un lápiz? Cuando te equivoques, cuenta conmigo.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 39,
+    "texto": "—Mamá, en el colegio me dicen que soy muy despistado. —¿Quién? —¿Quién qué?",
+    "categoria": "padres"
+  },
+  {
+    "id": 74,
+    "texto": "¿Cuál es el hombre más fuerte del mundo? El guardia de tráfico, porque con una mano para un camión.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 36,
+    "texto": "—Doctor, creo que soy una campana. —Pues tómese esto y, si no se le pasa, llámeme.",
+    "categoria": "doctor"
+  },
+  {
+    "id": 71,
+    "texto": "¿Cuál es el colmo de un trapecista? Que lo dejen colgado.",
+    "categoria": "colmos"
+  }
 ]
