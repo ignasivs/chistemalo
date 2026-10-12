@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Compartir from '../../components/Compartir.astro';
+import { chistes, tituloDelChiste, resumen, SITIO } from '../../utils/chiste';
+
+export function getStaticPaths() {
+  return chistes.map((chiste, i) => ({
+    params: { slug: chiste.slug },
+    props: { chiste, anterior: chistes[i - 1], siguiente: chistes[i + 1] },
+  }));
+}
+
+const { chiste, anterior, siguiente } = Astro.props;
+const relacionados = chistes.filter((c) => c.catSlug === chiste.catSlug && c.id !== chiste.id).slice(0, 5);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITIO}/` },
+    { '@type': 'ListItem', position: 2, name: chiste.categoria, item: `${SITIO}/categoria/${chiste.catSlug}/` },
+    { '@type': 'ListItem', position: 3, name: tituloDelChiste(chiste.texto) },
+  ],
+};
+---
+
+<Layout
+  title={`${tituloDelChiste(chiste.texto)} | Chiste malo`}
+  description={resumen(chiste.texto)}
+  jsonLd={jsonLd}
+>
+  <main>
+    <p class="migas">
+      <a href="/">Inicio</a> › <a href={`/categoria/${chiste.catSlug}/`}>{chiste.categoria}</a>
+    </p>
+
+    <article class="tarjeta">
+      <h1 class="chiste">{chiste.texto}</h1>
+      <Compartir texto={chiste.texto} url={`${SITIO}/chiste/${chiste.slug}/`} />
+    </article>
+
+    <div class="paginacion">
+      {anterior ? <a href={`/chiste/${anterior.slug}/`}>← Anterior</a> : <span />}
+      {siguiente ? <a href={`/chiste/${siguiente.slug}/`}>Siguiente →</a> : <span />}
+    </div>
+
+    {relacionados.length > 0 && (
+      <>
+        <h2>Más chistes de {chiste.categoria}</h2>
+        <ul class="lista">
+          {relacionados.map((c) => <li><a href={`/chiste/${c.slug}/`}>{c.texto}</a></li>)}
+        </ul>
+      </>
+    )}
+  </main>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { categorias, resumen, SITIO } from '../../utils/chiste';
+import { INTROS } from '../../data/categorias';
+
+export function getStaticPaths() {
+  return categorias().map((cat) => ({ params: { categoria: cat.slug }, props: { cat } }));
+}
+
+const { cat } = Astro.props;
+const info = INTROS[cat.slug] ?? {
+  titulo: `Chistes de ${cat.nombre}`,
+  intro: `Chistes malos de la categoría ${cat.nombre}.`,
+};
+
+// Las categorías con muy pocos chistes no se indexan (contenido escaso)
+const noindex = cat.chistes.length < 3;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITIO}/` },
+    { '@type': 'ListItem', position: 2, name: 'Categorías', item: `${SITIO}/categorias/` },
+    { '@type': 'ListItem', position: 3, name: info.titulo },
+  ],
+};
+---
+
+<Layout
+  title={`${info.titulo} | Chiste malo del día`}
+  description={resumen(info.intro)}
+  noindex={noindex}
+  jsonLd={jsonLd}
+>
+  <main>
+    <p class="migas"><a href="/">Inicio</a> › <a href="/categorias/">Categorías</a></p>
+    <h1>{info.titulo}</h1>
+    <p class="intro">{info.intro}</p>
+
+    <ul class="lista">
+      {cat.chistes.map((c) => <li><a href={`/chiste/${c.slug}/`}>{c.texto}</a></li>)}
+    </ul>
+  </main>
+</Layout>

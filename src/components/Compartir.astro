@@ -1,0 +1,29 @@
+---
+interface Props {
+  texto: string;
+  url: string;
+}
+
+const { texto, url } = Astro.props;
+const mensaje = encodeURIComponent(`${texto}\n\n😅 ${url}`);
+---
+
+<div class="acciones">
+  <a class="boton" href={`https://wa.me/?text=${mensaje}`} target="_blank" rel="noopener">WhatsApp</a>
+  <a class="boton" href={`https://twitter.com/intent/tweet?text=${mensaje}`} target="_blank" rel="noopener">X</a>
+  <button class="boton copiar" type="button" data-texto={`${texto}\n\n${url}`}>Copiar</button>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.copiar').forEach((boton) => {
+    boton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(boton.dataset.texto ?? '');
+        boton.textContent = '¡Copiado!';
+      } catch {
+        boton.textContent = 'No se pudo copiar';
+      }
+      setTimeout(() => (boton.textContent = 'Copiar'), 2000);
+    });
+  });
+</script>

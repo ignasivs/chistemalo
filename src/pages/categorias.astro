@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { categorias } from '../utils/chiste';
+
+const cats = categorias();
+---
+
+<Layout
+  title="Categorías de chistes malos | Chiste malo del día"
+  description="Explora los chistes malos por categorías: colmos, animales, doctores, tecnología, comida, colegio y muchas más."
+>
+  <main>
+    <h1>Categorías de <span>chistes</span></h1>
+    <div class="chips">
+      {cats.map((c) => <a class="chip" href={`/categoria/${c.slug}/`}>{c.nombre} ({c.chistes.length})</a>)}
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { chistesAnteriores } from '../utils/chiste';
+
+const anteriores = chistesAnteriores();
+
+const formato = new Intl.DateTimeFormat('es-ES', {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<Layout
+  title="Chistes anteriores | Chiste malo del día"
+  description="Los chistes malos de los días anteriores. Repasa el chiste del día de cada fecha y comparte tu favorito."
+>
+  <main>
+    <h1>Archivo de <span>chistes</span></h1>
+
+    {anteriores.length === 0 ? (
+      <p class="intro">Todavía no hay chistes de días anteriores. Vuelve mañana y empezará a llenarse.</p>
+    ) : (
+      <ul class="lista">
+        {anteriores.map(({ fecha, chiste }) => (
+          <li>
+            <a href={`/chiste/${chiste.slug}/`}>
+              <small>{formato.format(new Date(`${fecha}T12:00:00Z`))}</small>
+              {chiste.texto}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </main>
+</Layout>
