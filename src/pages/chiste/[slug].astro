@@ -53,4 +53,9 @@ const jsonLd = {
       </>
     )}
   </main>
+  <script is:inline define:vars={{ categoria: chiste.categoria }}>
+  window.addEventListener('load', () => {
+    if (window.umami) window.umami.track('chiste-visto', { categoria });
+  });
+</script>
 </Layout>

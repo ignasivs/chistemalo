@@ -9,9 +9,29 @@ const mensaje = encodeURIComponent(`${texto}\n\n😅 ${url}`);
 ---
 
 <div class="acciones">
-  <a class="boton" href={`https://wa.me/?text=${mensaje}`} target="_blank" rel="noopener">WhatsApp</a>
-  <a class="boton" href={`https://twitter.com/intent/tweet?text=${mensaje}`} target="_blank" rel="noopener">X</a>
-  <button class="boton copiar" type="button" data-texto={`${texto}\n\n${url}`}>Copiar</button>
+  <a
+    class="boton"
+    href={`https://wa.me/?text=${mensaje}`}
+    target="_blank"
+    rel="noopener"
+    data-umami-event="compartir"
+    data-umami-event-red="whatsapp">WhatsApp</a
+  >
+  <a
+    class="boton"
+    href={`https://twitter.com/intent/tweet?text=${mensaje}`}
+    target="_blank"
+    rel="noopener"
+    data-umami-event="compartir"
+    data-umami-event-red="x">X</a
+  >
+  <button
+    class="boton copiar"
+    type="button"
+    data-texto={`${texto}\n\n${url}`}
+    data-umami-event="compartir"
+    data-umami-event-red="copiar">Copiar</button
+  >
 </div>
 
 <script>
