@@ -368,5 +368,105 @@
     "id": 71,
     "texto": "¿Cuál es el colmo de un trapecista? Que lo dejen colgado.",
     "categoria": "colmos"
+  },
+  {
+    "id": 80,
+    "texto": "¿Por qué el ordenador se puso gafas? Porque no tenía buena resolución.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 81,
+    "texto": "¿Cómo se llama el perro que hace magia? Labracadabrador.",
+    "categoria": "animales"
+  },
+  {
+    "id": 82,
+    "texto": "¿Por qué la vaca fue al espacio? Para conocer la Vía Láctea.",
+    "categoria": "animales"
+  },
+  {
+    "id": 83,
+    "texto": "¿Qué le dice una cebolla a otra? No llores, que aún nos quedan muchas capas.",
+    "categoria": "comida"
+  },
+  {
+    "id": 84,
+    "texto": "¿Cuál es el colmo de un cartero? Que no encuentre correspondencia en su vida.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 85,
+    "texto": "¿Por qué el músico fue al médico? Porque se encontraba fuera de tono.",
+    "categoria": "música"
+  },
+  {
+    "id": 86,
+    "texto": "¿Qué hace una escoba cuando gana una carrera? Barre con la competencia.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 87,
+    "texto": "¿Qué le dice el calendario al lunes? No me agobies, que tengo los días contados.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 88,
+    "texto": "¿Qué le dice el queso al cuchillo? No me cortes el rollo.",
+    "categoria": "comida"
+  },
+  {
+    "id": 89,
+    "texto": "¿Qué le dice un cable a otro? Estamos conectados, pero no te enrolles.",
+    "categoria": "tecnología"
+  },
+  {
+    "id": 90,
+    "texto": "¿Por qué el músico llevaba un mapa al ensayo? Porque buscaba el tono adecuado.",
+    "categoria": "música"
+  },
+  {
+    "id": 91,
+    "texto": "¿Qué le dice una moneda a otra? Tú y yo hacemos buen cambio.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 92,
+    "texto": "¿Cómo se llama un boomerang que no vuelve? Palo.",
+    "categoria": "acertijos"
+  },
+  {
+    "id": 93,
+    "texto": "¿Por qué los libros de historia nunca se aburren? Porque siempre tienen pasado.",
+    "categoria": "libros"
+  },
+  {
+    "id": 94,
+    "texto": "¿Qué le dice un zapato al otro? Vamos paso a paso.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 95,
+    "texto": "¿Cuál es el colmo de un cocinero? Que le den calabazas en una cita.",
+    "categoria": "colmos"
+  },
+  {
+    "id": 96,
+    "texto": "¿Por qué la bicicleta no quería ir al trabajo? Porque estaba hasta los pedales.",
+    "categoria": "objetos"
+  },
+  {
+    "id": 97,
+    "texto": "¿Qué le dice una nube al paraguas? Hoy te toca trabajar, que viene una buena.",
+    "categoria": "naturaleza"
+  },
+  {
+    "id": 98,
+    "texto": "¿Qué hace una gallina delante del ordenador? Busca huevos de Pascua.",
+    "categoria": "animales"
+  },
+  {
+    "id": 99,
+    "texto": "¿Qué le dice una puerta a otra? Te veo un poco cerrada hoy.",
+    "categoria": "objetos"
   }
 ]
