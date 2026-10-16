@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { categorias } from '../utils/chiste';
+
+const cats = categorias();
+---
+
+<Layout
+  title="Página no encontrada | Chiste malo del día"
+  description="Esta página no existe, pero los chistes malos sí."
+  noindex={true}
+>
+  <main>
+    <p class="fecha">Error 404</p>
+    <h1>Esta página <span>no existe</span></h1>
+
+    <article class="tarjeta">
+      <p class="chiste">¿Por qué no aparece la página? Porque se fue a buscar un chiste mejor.</p>
+      <div class="acciones">
+        <a class="boton" href="/">Ir a la portada</a>
+        <a class="boton" href="/chistes-anteriores/">Chistes anteriores</a>
+      </div>
+    </article>
+
+    <h2>O elige una categoría</h2>
+    <div class="chips">
+      {cats.map((c) => <a class="chip" href={`/categoria/${c.slug}/`}>{c.nombre}</a>)}
+    </div>
+  </main>
+
+  <script is:inline>
+    window.addEventListener('load', () => {
+      if (window.umami) window.umami.track('error-404', { ruta: location.pathname });
+    });
+  </script>
+</Layout>
