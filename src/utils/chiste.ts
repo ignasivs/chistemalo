@@ -5,6 +5,9 @@ export const SITIO = "https://chistemalo.com";
 // Primer día en el que se muestra el primer chiste (formato AAAA-MM-DD)
 export const FECHA_INICIO = "2026-10-10";
 
+export const CANAL_WHATSAPP =
+  "https://whatsapp.com/channel/0029Vb9Ns9S8kyyNJHSGNt1T";
+
 export interface Chiste {
   id: number;
   texto: string;

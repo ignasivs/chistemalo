@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Compartir from '../components/Compartir.astro';
-import { chisteDelDia, categorias, SITIO } from '../utils/chiste';
+import { chisteDelDia, categorias, SITIO, CANAL_WHATSAPP } from '../utils/chiste';
 
 const { fecha, chiste } = chisteDelDia();
 const cats = categorias();
@@ -41,6 +41,17 @@ const jsonLd = {
     <p class="nota">
       Más chistes de <a href={`/categoria/${chiste.catSlug}/`}>{chiste.categoria}</a> ·
       <a href="/chistes-anteriores/">ver chistes anteriores</a>
+    </p>
+
+    <p class="canal">
+      <a
+        class="boton"
+        href={CANAL_WHATSAPP}
+        target="_blank"
+        rel="noopener"
+        data-umami-event="canal-whatsapp"
+        data-umami-event-lugar="portada">📲 Recibe el chiste del día en WhatsApp</a
+      >
     </p>
 
     <h2>Chistes por categorías</h2>
