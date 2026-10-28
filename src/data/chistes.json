@@ -468,5 +468,65 @@
     "id": 99,
     "texto": "¿Qué le dice una puerta a otra? Te veo un poco cerrada hoy.",
     "categoria": "objetos"
+  },
+  {
+    "id": 100,
+    "texto": "-Cariño, te dejo, estás obsesionado con el fútbol y me haces falta. -PERO QUE FALTA NI QUE FALTA!! SI NO TE HE TOCADO!!",
+    "categoria": "fútbol"
+  },
+  {
+    "id": 101,
+    "texto": "Si un chino sale de China... Se desorienta?",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 102,
+    "texto": "¿Sabéis porqué los discapacitados no pueden ver películas de terror? Porque son paraNormales.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 103,
+    "texto": "-Paco, me arreglo y nos vamos... -Vale, cari, voy poniendo Harry Potter, que no la he visto...",
+    "categoria": "parejas"
+  },
+  {
+    "id": 104,
+    "texto": "¿Tú sabes qué hay detrás de la vaca que rie? El toro que empuja.",
+    "categoria": "juegos de palabras"
+  },
+  {
+    "id": 105,
+    "texto": "-Paco, ¿del 1 al 10 cuánto me quieres? -¿Y al cero qué le pasa?",
+    "categoria": "parejas"
+  },
+  {
+    "id": 106,
+    "texto": "-¡Papá, saque un 7.2 en el test! -Qué bueno, hijo, ¿y de qué era el examen? -De alcoholemia, y se han llevado tu coche...",
+    "categoria": "padres"
+  },
+  {
+    "id": 107,
+    "texto": "-¿Puedo dejar el cepillo de dientes en tu casa? -Solo te he pedido fuego... -Vaya, quiere ir despacio el señorito...",
+    "categoria": "parejas"
+  },
+  {
+    "id": 108,
+    "texto": "-Me he comprado un sonotone que puedo oír caer una aguja a 50 metros.. -¿Y cuánto te ha costado? -Ayer, a las 11..",
+    "categoria": "objetos"
+  },
+  {
+    "id": 109,
+    "texto": "-Me han despedido del trabajo. -¿Por qué? -Según la carta de despido, por 'falta de atención constante'. -¿Y tú qué les has dicho? -¿A quién?",
+    "categoria": "trabajo"
+  },
+  {
+    "id": 110,
+    "texto": "-Oye, cari, ¿tu madre sabe perrear?. -No. -Pues entonces se está electrocutando...",
+    "categoria": "suegras"
+  },
+  {
+    "id": 111,
+    "texto": "-Cariño, que te llamo porque me acabo de comer una palmera. -¿De chocolate?. -No, del paseo marítimo, dame los datos del seguro, anda..",
+    "categoria": "suegras"
   }
 ]
